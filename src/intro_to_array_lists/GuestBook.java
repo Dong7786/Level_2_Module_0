@@ -24,7 +24,10 @@ GuestBook book = new GuestBook();
 	// button reads "View Names".
 	GuestBook() {
 		
-		
+		list.add("Bob Banders");
+		list.add("Sandy Summers");
+		list.add("Greg Ganders");
+		list.add("Donny Doners");
 		
 		frame.setVisible(true);
 		frame.pack();
@@ -47,7 +50,7 @@ GuestBook book = new GuestBook();
 			
 		}
 		if(e.getSource() == button2) {
-			for(int i = 0; i <= list.size() ; i++) {
+			for(int i = 0; i < list.size() ; i++) {
 				System.out.println(list.get(i));
 			}
 		}
